@@ -1,0 +1,9 @@
+0 blackout 100
+5 birdies_full 5000 # syntax for timed cues is <seconds> <presetnameornumber> <interpolation-time-in-ms>
+10 soft_pink 1000 # syntax for untimed cues is <cue-number> <presetnameornumber> <interp...>
+15 birdies_full 500 # transition times are as accurate as Max
+20 soft_pink 4000 # the timer here is not super accurate - but could be tethered to a DAW
+30 birdies_full 0 # the resolution of the clock within presets is limited to 1 second; this would be easy to change
+35 strobe soft_pink red&green 200 # strobe syntax: <strobe> <preset1> <preset2> <interp>
+40 strobe stop # <strobe> <stop>
+44 birdies_full 5000

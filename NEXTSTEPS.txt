@@ -1,0 +1,12 @@
+Add paste keyboard shortcut button
+
+Add strobe light and the 2 big white lights
+
+Make it possible to delete scenes.
+
+Add lock button to prevent accidentally moving light fixtures in interface.
+
+Tidy up interface.
+
+Clarify cuelist and subsequence.
+Rewrite subsequence so that it resembles cuelist.

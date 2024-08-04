@@ -1,0 +1,18 @@
+////////// 0.1.2
+
+04.08.24
+
+Forget what changes were added. Consolidated project into new git repository to allow editing from Kirkos Mac. 
+
+Saved with contents of BLACKMAGICRAWRR concert inside.
+
+Added "NEXTSTEPS.txt"
+
+
+22.07.24
+Added text shownotes
+Added QLab integration
+
+Copied in "dictionary of dictionaries" system - which allows a total export of all settings. Don't think import works properly though! But have made a working demo of import in a different file.
+
+/////0.1 - initial version in Unit 44

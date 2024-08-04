@@ -1,0 +1,6 @@
+1 store1 0
+2 rainbow_1 1000
+3 store1 0
+4 rainbow_1 5000
+5 store1 2000
+6 rainbow_1 1000

@@ -1,0 +1,96 @@
+{
+	"sixRGBW" : 	{
+		"1" : 		{
+			"name" : "par_1",
+			"type" : "RGBW",
+			"positionX" : 200,
+			"positionY" : 300,
+			"startingAddress" : 40
+		}
+,
+		"2" : 		{
+			"name" : "par_2",
+			"type" : "RGBW",
+			"positionX" : 294,
+			"positionY" : 302,
+			"startingAddress" : 45
+		}
+,
+		"3" : 		{
+			"name" : "p33",
+			"type" : "RGBW",
+			"positionX" : 286,
+			"positionY" : 127,
+			"startingAddress" : 28
+		}
+,
+		"4" : 		{
+			"name" : "p44",
+			"type" : "RGBW",
+			"positionX" : 370,
+			"positionY" : 280,
+			"startingAddress" : 56
+		}
+,
+		"5" : 		{
+			"name" : "p55",
+			"type" : "RGBW",
+			"positionX" : 27,
+			"positionY" : 284,
+			"startingAddress" : 69
+		}
+,
+		"6" : 		{
+			"name" : "par_7",
+			"type" : "RGBW",
+			"positionX" : 534,
+			"positionY" : 161,
+			"startingAddress" : 70
+		}
+,
+		"7" : 		{
+			"name" : "par_768",
+			"type" : "RGBW",
+			"positionX" : 116,
+			"positionY" : 276,
+			"startingAddress" : 70
+		}
+,
+		"8" : 		{
+			"name" : "par_769_b",
+			"type" : "RGBW",
+			"positionX" : 461,
+			"positionY" : 276,
+			"startingAddress" : 70
+		}
+,
+		"9" : 		{
+			"name" : "par_770",
+			"type" : "RGBW",
+			"positionX" : 461,
+			"positionY" : 276,
+			"startingAddress" : 70
+		}
+,
+		"10" : 		{
+			"name" : "par_10",
+			"type" : "RGBW",
+			"positionX" : 200,
+			"positionY" : 300,
+			"startingAddress" : 40
+		}
+
+	}
+,
+	"Unit44_birdies_default" : 	{
+		"1" : 		{
+			"name" : "default_light",
+			"type" : "birdie",
+			"positionX" : 270,
+			"positionY" : 230,
+			"startingAddress" : 0
+		}
+
+	}
+
+}

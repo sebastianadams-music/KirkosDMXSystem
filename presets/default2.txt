@@ -1,0 +1,6 @@
+5 one 500
+10 two 1000
+15 three test
+20 four 
+30 five
+60 six 
