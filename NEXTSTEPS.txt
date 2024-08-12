@@ -10,3 +10,5 @@ Tidy up interface.
 
 Clarify cuelist and subsequence.
 Rewrite subsequence so that it resembles cuelist.
+
+Add a "current fade button"
