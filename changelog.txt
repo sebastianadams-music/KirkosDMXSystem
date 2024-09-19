@@ -1,3 +1,9 @@
+Minimise/restore button added for ease of use in Unit 44
+
+Small change to interface layout (store scene names added)
+
+Unexpected behaviour where setting does not save if mouse click has not happened after text entry - now fixed.
+
 ////////// 0.1.2
 
 04.08.24
