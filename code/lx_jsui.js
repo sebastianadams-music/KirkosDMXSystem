@@ -14,7 +14,8 @@ var vbrgb = [.7,.7,.7,.8];
 last_x = 0
 last_y = 0
 var d = new Dict("lxtest"); 
-var lxState = new Dict("lxstate"); 
+var lxState = new Dict("lxstate");
+var lockState = new Dict("lockState") 
 var lightArray = []
 var activeLight = 0
 
@@ -95,18 +96,29 @@ function ondrag(x,y,but)
         // if no button is pressed while dragging, the rest of the ondrag function is not called (this stops the object moving on a new click!)
     }
 
+    
+
     var keys = d.getkeys()
         for (var i = 0; i < keys.length; i++) {
         }
-    var mouseNorm = normCoords(x, y, width, height)
+    
 
     // need to get the active light and move it to the new mouse position, then redraw
     dictContents = d.get(JSON.stringify(activeLight))
 
     var activeLightDict = new Dict()
     activeLightDict.set("type", dictContents.get("type"))
-    activeLightDict.set("positionX", mouseNorm[0])
-    activeLightDict.set("positionY", mouseNorm[1])
+
+    if (lockState.get("lock") == 0) {
+        var mouseNorm = normCoords(x, y, width, height)
+        activeLightDict.set("positionX", mouseNorm[0])
+        activeLightDict.set("positionY", mouseNorm[1])
+    }   
+    else {
+        activeLightDict.set("positionX", dictContents.get("positionX"))
+        activeLightDict.set("positionY", dictContents.get("positionY"))       
+    }
+
     activeLightDict.set("startingAddress", dictContents.get("startingAddress"))
     activeLightDict.set("lightGroup", dictContents.get("lightGroup"))
 
@@ -179,7 +191,7 @@ function drawBirdie(lxNum, posX, posY, startingAddress, lightGroup){
 		// fontsize(myfontsize*height);
 		// textalign("center","center");		
 		text("add: " + startingAddress);
-		text("add: " + startingAddress);
+		// text("add: " + startingAddress);
         moveto(posX + 1*radius, posY + .25*radius)
         text("group: " + lightGroup);
         

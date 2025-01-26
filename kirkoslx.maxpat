@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 36.0, 87.0, 1340.0, 959.0 ],
+		"rect" : [ 100.0, 100.0, 1430.0, 800.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,23 +40,499 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-227",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1156.0, 575.0, 164.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1209.333192408084869, 569.52373993396759, 86.0, 20.0 ],
+					"text" : "import/export"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-224",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2084.0, 423.5, 167.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1133.642723083496094, 649.0, 130.0, 20.0 ],
+					"text" : "open export manager",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-223",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2084.0, 395.0, 137.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1126.642723083496094, 622.0, 137.0, 20.0 ],
+					"text" : "load all settings from file",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-221",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2084.0, 368.0, 126.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1139.642723083496094, 594.0, 126.0, 20.0 ],
+					"text" : "save all settings to file",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-214",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2056.0, 421.5, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1265.642723083496094, 647.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-212",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2056.0, 395.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1265.642723083496094, 620.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-209",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2056.0, 367.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1265.642723083496094, 592.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-199",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1968.5, 380.5, 42.0, 22.0 ],
+					"text" : "import"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1922.0, 380.5, 42.0, 22.0 ],
+					"text" : "export"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-89",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1883.0, 380.5, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-83",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1883.0, 416.0, 147.0, 35.0 ],
+					"text" : ";\rdictionaryofdictionaries $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-208",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1141.0, 706.0, 61.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1026.666541218757629, 454.634166906445671, 61.0, 20.0 ],
+					"text" : "cue editor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-204",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1119.999863147735596, 704.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1005.714162826538086, 452.729405234425712, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-197",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1119.999863147735596, 735.0, 73.0, 35.0 ],
+					"text" : ";\rcuelist open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 3,
+					"id" : "obj-186",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 276.190442442893982, 682.857059419155121, 149.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 63.80951601266861, 25.047616720199585, 69.0, 24.0 ],
+					"text" : "on open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-185",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1086.666533887386322, 546.0, 31.0, 22.0 ],
+					"text" : "int 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-182",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1086.666533887386322, 520.0, 37.0, 22.0 ],
+					"text" : "r lx.lb"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-179",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 645.71420681476593, 153.333314597606659, 151.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 650.476110994815826, 13.666665852069855, 34.0, 20.0 ],
+					"text" : "light"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-158",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 536.448593974113464, 461.682239413261414, 151.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 50.0, 398.0, 43.0, 20.0 ],
+					"text" : "fades"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-142",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 536.448593974113464, 310.280371427536011, 151.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 4.142852604389191, 256.785683214664459, 43.0, 20.0 ],
+					"text" : "scene"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-131",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 542.990649998188019, 165.420559465885162, 151.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 106.715363532304764, 64.74201513507262, 24.0, 20.0 ],
+					"text" : "UI "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1351.546316027641296, 1151.546327233314514, 89.0, 35.0 ],
+					"text" : ";\rscene blackout"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-93",
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1351.546316027641296, 1116.49478280544281, 149.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 109.26188462972641, 604.761830866336823, 149.0, 27.0 ],
+					"text" : "BLACKOUT",
+					"textcolor" : [ 0.701960784313725, 0.686274509803922, 0.43921568627451, 1.0 ],
+					"texton" : "BLACKOUT",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textovercolor" : [ 0.572549019607843, 0.356862745098039, 0.356862745098039, 1.0 ],
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.349019607843137, 0.349019607843137, 1.0 ],
+					"id" : "obj-92",
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1192.783438324928284, 1114.432927250862122, 149.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 109.26188462972641, 638.095160126686096, 149.0, 30.0 ],
+					"text" : "HOUSELIGHTS NOW",
+					"textcolor" : [ 0.701960784313725, 0.686274509803922, 0.43921568627451, 1.0 ],
+					"texton" : "Houselights",
+					"textoncolor" : [ 1.0, 0.23921568627451, 0.23921568627451, 1.0 ],
+					"textovercolor" : [ 0.572549019607843, 0.356862745098039, 0.356862745098039, 1.0 ],
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1192.783438324928284, 1076.288599491119385, 149.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 109.26188462972641, 569.52373993396759, 149.0, 27.0 ],
+					"text" : "Houselights",
+					"textcolor" : [ 0.701960784313725, 0.686274509803922, 0.43921568627451, 1.0 ],
+					"texton" : "Houselights",
+					"textoncolor" : [ 1.0, 0.23921568627451, 0.23921568627451, 1.0 ],
+					"textovercolor" : [ 0.572549019607843, 0.356862745098039, 0.356862745098039, 1.0 ],
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1192.783438324928284, 1146.391688346862793, 119.0, 35.0 ],
+					"text" : ";\rscene houseLights 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1282.0, 690.0, 153.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 967.880833566188812, 306.82216876745224, 207.0, 20.0 ],
+					"text" : "add way to re-order dictionary entries"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-121",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 530.0, 161.0, 31.0, 22.0 ],
+					"text" : "int 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 530.0, 135.0, 37.0, 22.0 ],
+					"text" : "r lx.lb"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-193",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 458.5, 149.0, 66.0, 22.0 ],
+					"text" : "set lock $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hint" : "dict used in JS code",
+					"id" : "obj-183",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 501.5, 191.0, 100.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-177",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "dictionary", "", "", "", "" ],
+					"patching_rect" : [ 465.0, 190.0, 80.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"legacy" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict lockState"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-157",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 488.0, 110.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 136.23916944861412, 85.694393527292164, 106.0, 20.0 ],
+					"text" : "lock light positions"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-136",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 458.0, 108.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 106.715363532304764, 83.789631855272205, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-222",
 					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 444.08604109287262, 782.795733451843262, 50.0, 62.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 387.09679126739502, 749.462398648262024, 109.0, 35.0 ],
+					"patching_rect" : [ 1114.432927250862122, 1132.989627242088318, 50.0, 62.0 ],
 					"text" : ";\rscene houseLights"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 32.853128754170413,
+					"fontsize" : 27.129964392790498,
 					"id" : "obj-220",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -1600,9 +2076,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 524.731205940246582, 806.451648473739624, 260.0, 45.0 ],
+					"patching_rect" : [ 524.731205940246582, 806.451648473739624, 250.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 524.731205940246582, 794.92313292509391, 203.290329694747925, 45.0 ],
+					"presentation_rect" : [ 1097.142723083496094, 134.546519376645392, 174.0, 39.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1616,13 +2092,15 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
 					"id" : "obj-219",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 276.731183886528015, 1136.559189915657043, 151.0, 20.0 ],
+					"patching_rect" : [ 276.731183886528015, 1136.559189915657043, 151.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 115.053768515586853, 645.161318778991699, 151.0, 20.0 ],
+					"presentation_rect" : [ 405.71423614025116, 503.642791509628296, 174.0, 24.0 ],
 					"text" : "freeze before using groups"
 				}
 
@@ -1637,7 +2115,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 252.0, 1135.483921051025391, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.322584629058838, 644.086049914360046, 24.0, 24.0 ]
+					"presentation_rect" : [ 379.99995356798172, 503.642791509628296, 24.0, 24.0 ]
 				}
 
 			}
@@ -1684,7 +2162,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1411.350438237190247, 267.979366540908813, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 599.999966382980347, 643.298933029174805, 100.0, 20.0 ]
+					"presentation_rect" : [ 135.08410207927227, 427.0, 100.0, 20.0 ]
 				}
 
 			}
@@ -1696,7 +2174,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1404.350438237190247, 267.979366540908813, 107.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 592.783471941947937, 643.298933029174805, 107.0, 20.0 ],
+					"presentation_rect" : [ 129.08410207927227, 427.0, 107.0, 20.0 ],
 					"text" : "change fade curve"
 				}
 
@@ -1711,7 +2189,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1378.350438237190247, 265.979366540908813, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 567.010277509689331, 641.237077474594116, 24.0, 24.0 ]
+					"presentation_rect" : [ 103.08410207927227, 425.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1766,7 +2244,7 @@
 ,
 						"2" : 						{
 							"type" : "RGBW",
-							"positionX" : 0.666666666666667,
+							"positionX" : 0.682051282051282,
 							"positionY" : 0.496402877697842,
 							"startingAddress" : 50,
 							"lightGroup" : 1
@@ -1798,7 +2276,7 @@
 ,
 						"6" : 						{
 							"type" : "birdie",
-							"positionX" : -0.097435897435897,
+							"positionX" : -0.087179487179487,
 							"positionY" : 0.592326139088729,
 							"startingAddress" : 134,
 							"lightGroup" : 1
@@ -1822,8 +2300,8 @@
 ,
 						"9" : 						{
 							"type" : "birdie",
-							"positionX" : 0.353846153846154,
-							"positionY" : 0.707434052757794,
+							"positionX" : 0.415384615384615,
+							"positionY" : 0.731414868105515,
 							"startingAddress" : 131,
 							"lightGroup" : 1
 						}
@@ -1894,8 +2372,8 @@
 ,
 						"18" : 						{
 							"type" : "RGBW",
-							"positionX" : -0.697435897435897,
-							"positionY" : 0.477218225419664,
+							"positionX" : -0.692307692307692,
+							"positionY" : 0.434052757793765,
 							"startingAddress" : 60,
 							"lightGroup" : 1
 						}
@@ -1957,7 +2435,7 @@
 ,
 						"2" : 						{
 							"type" : "RGBW",
-							"positionX" : 0.666666666666667,
+							"positionX" : 0.682051282051282,
 							"positionY" : 0.496402877697842,
 							"startingAddress" : 50,
 							"lightGroup" : 1
@@ -1989,7 +2467,7 @@
 ,
 						"6" : 						{
 							"type" : "birdie",
-							"positionX" : -0.097435897435897,
+							"positionX" : -0.087179487179487,
 							"positionY" : 0.592326139088729,
 							"startingAddress" : 134,
 							"lightGroup" : 1
@@ -2013,8 +2491,8 @@
 ,
 						"9" : 						{
 							"type" : "birdie",
-							"positionX" : 0.353846153846154,
-							"positionY" : 0.707434052757794,
+							"positionX" : 0.415384615384615,
+							"positionY" : 0.731414868105515,
 							"startingAddress" : 131,
 							"lightGroup" : 1
 						}
@@ -2085,8 +2563,8 @@
 ,
 						"18" : 						{
 							"type" : "RGBW",
-							"positionX" : -0.697435897435897,
-							"positionY" : 0.477218225419664,
+							"positionX" : -0.692307692307692,
+							"positionY" : 0.434052757793765,
 							"startingAddress" : 60,
 							"lightGroup" : 1
 						}
@@ -2119,7 +2597,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1797.0, 61.0, 39.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 235.051533222198486, 608.410923423942904, 39.0, 20.0 ],
+					"presentation_rect" : [ 108.204244390130043, 226.0, 39.0, 20.0 ],
 					"text" : "store"
 				}
 
@@ -2132,7 +2610,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1855.0, 61.0, 39.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 264.948438763618469, 608.410923423942904, 39.0, 20.0 ],
+					"presentation_rect" : [ 193.963959768414497, 221.909203946590424, 39.0, 20.0 ],
 					"text" : "name"
 				}
 
@@ -2162,14 +2640,16 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-153",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1839.0, 258.0, 44.0, 20.0 ],
+					"patching_rect" : [ 1839.0, 258.0, 49.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 138.350516676902771, 51.546388864517212, 20.0 ],
-					"text" : "setup"
+					"presentation_rect" : [ 20.704244390130043, 164.027720343851001, 88.0, 20.0 ],
+					"text" : "fixture layout:"
 				}
 
 			}
@@ -2200,13 +2680,14 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-156",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1805.0, 39.0, 75.0, 20.0 ],
+					"patching_rect" : [ 1805.0, 39.0, 75.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 242.268027663230896, 572.328451218780856, 75.0, 20.0 ],
-					"text" : "store setup"
+					"presentation_rect" : [ 108.204244390130043, 182.0, 77.0, 20.0 ],
+					"text" : "store layout"
 				}
 
 			}
@@ -2744,7 +3225,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1839.0, 240.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 160.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 107.704244390130043, 163.027720343851001, 100.0, 22.0 ]
 				}
 
 			}
@@ -2758,7 +3239,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1747.422582507133484, 59.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 242.268027663230896, 590.885151210007052, 24.0, 24.0 ]
+					"presentation_rect" : [ 108.204244390130043, 200.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2772,8 +3253,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1829.0, 80.0, 100.759715378284454, 25.924643385625927 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.010294318199158, 589.854223432716708, 100.759715378284454, 25.924643385625927 ],
-					"text" : "s2"
+					"presentation_rect" : [ 132.204244390130043, 199.0, 100.759715378284454, 25.924643385625927 ],
+					"text" : "s3"
 				}
 
 			}
@@ -3083,7 +3564,6 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "dictionary", "", "", "", "" ],
 					"patching_rect" : [ 1751.546293616294861, 161.0, 137.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"legacy" : 1,
@@ -3098,14 +3578,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 8.024767801857585,
+					"fontsize" : 9.127470186859885,
 					"id" : "obj-98",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1087.0, 50.0, 208.0, 15.0 ],
+					"patching_rect" : [ 1087.0, 50.0, 236.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 499.265239775180817, 558.5, 234.0, 15.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 85.999990224838257, 307.714248359203339, 150.168223708868027, 27.0 ],
 					"text" : "<< scenes are based on DMX messages, not on fixtures"
 				}
 
@@ -3118,7 +3599,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 254.5, 1024.0, 101.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 133.333339214324951, 672.04304039478302, 101.0, 20.0 ],
+					"presentation_rect" : [ 379.99995356798172, 527.452312409877777, 101.0, 20.0 ],
 					"text" : "light group faders"
 				}
 
@@ -3134,7 +3615,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 313.0, 1044.5, 10.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 206.451622009277344, 692.473148822784424, 19.0, 97.0 ],
+					"presentation_rect" : [ 452.380897104740143, 547.452309966087341, 19.0, 97.0 ],
 					"size" : 1.0
 				}
 
@@ -3150,7 +3631,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 294.0, 1044.5, 10.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 184.946244716644287, 692.473148822784424, 19.0, 97.0 ],
+					"presentation_rect" : [ 431.428518712520599, 547.452309966087341, 19.0, 97.0 ],
 					"size" : 1.0
 				}
 
@@ -3166,7 +3647,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 276.0, 1044.5, 10.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.215060830116272, 692.473148822784424, 19.0, 97.0 ],
+					"presentation_rect" : [ 406.666616976261139, 547.452309966087341, 19.0, 97.0 ],
 					"size" : 1.0
 				}
 
@@ -3182,7 +3663,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 259.0, 1044.5, 10.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 137.634414672851562, 692.473148822784424, 19.0, 97.0 ],
+					"presentation_rect" : [ 384.761857748031616, 547.452309966087341, 19.0, 97.0 ],
 					"size" : 1.0
 				}
 
@@ -3196,7 +3677,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 727.0, 521.0, 71.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.101249933242798, 512.0, 102.0, 20.0 ],
+					"presentation_rect" : [ 702.857056975364685, 355.23805183172226, 102.0, 20.0 ],
 					"text" : "light group"
 				}
 
@@ -3213,7 +3694,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 680.0, 520.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 502.101249933242798, 511.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 779.047523856163025, 354.28567099571228, 50.0, 22.0 ]
 				}
 
 			}
@@ -3508,7 +3989,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 214.0, 409.0, 50.0, 22.0 ],
-									"text" : "1 2"
+									"text" : "1 10"
 								}
 
 							}
@@ -3994,7 +4475,7 @@
 ,
 						"2" : 						{
 							"type" : "RGBW",
-							"positionX" : 0.666666666666667,
+							"positionX" : 0.682051282051282,
 							"positionY" : 0.496402877697842,
 							"startingAddress" : 50,
 							"lightGroup" : 1
@@ -4026,7 +4507,7 @@
 ,
 						"6" : 						{
 							"type" : "birdie",
-							"positionX" : -0.097435897435897,
+							"positionX" : -0.087179487179487,
 							"positionY" : 0.592326139088729,
 							"startingAddress" : 134,
 							"lightGroup" : 1
@@ -4050,8 +4531,8 @@
 ,
 						"9" : 						{
 							"type" : "birdie",
-							"positionX" : 0.353846153846154,
-							"positionY" : 0.707434052757794,
+							"positionX" : 0.415384615384615,
+							"positionY" : 0.731414868105515,
 							"startingAddress" : 131,
 							"lightGroup" : 1
 						}
@@ -4122,8 +4603,8 @@
 ,
 						"18" : 						{
 							"type" : "RGBW",
-							"positionX" : -0.697435897435897,
-							"positionY" : 0.477218225419664,
+							"positionX" : -0.692307692307692,
+							"positionY" : 0.434052757793765,
 							"startingAddress" : 60,
 							"lightGroup" : 1
 						}
@@ -4137,7 +4618,7 @@
 					"outlettype" : [ "dictionary", "", "", "", "" ],
 					"patching_rect" : [ 522.0, 21.0, 59.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.917114078998566, 5.0, 59.0, 22.0 ],
+					"presentation_rect" : [ 1206.666519224643707, 186.927465357194251, 59.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"legacy" : 1,
@@ -4157,7 +4638,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 95.0, 1038.0, 105.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 133.333339214324951, 795.698959827423096, 105.0, 20.0 ],
+					"presentation_rect" : [ 383.809476912021637, 646.499916911125183, 105.0, 20.0 ],
 					"text" : "master level scale"
 				}
 
@@ -4197,7 +4678,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 90.0, 1060.0, 91.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.03226375579834, 817.204337120056152, 103.0, 26.0 ],
+					"presentation_rect" : [ 379.047572731971741, 668.404676139354706, 103.0, 26.0 ],
 					"size" : 1.0
 				}
 
@@ -4223,7 +4704,7 @@
 					"patching_rect" : [ 2203.0, 460.0, 153.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1280.0, 754.0, 153.0, 47.0 ],
+					"presentation_rect" : [ 967.880833566188812, 325.869785487651825, 153.0, 47.0 ],
 					"text" : "if a light ID is missing, it throws tons of errors. write in a way to avoid"
 				}
 
@@ -4238,23 +4719,8 @@
 					"patching_rect" : [ 2096.0, 488.0, 150.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1107.343094068210576, 754.0, 150.0, 47.0 ],
+					"presentation_rect" : [ 1120.261767327785492, 325.869785487651825, 150.0, 47.0 ],
 					"text" : "add settings for the other lights we have - or even a light wizard eventually"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-62",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 628.0, 736.0, 153.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 931.407017767429352, 822.680366277694702, 153.0, 47.0 ],
-					"text" : "add option to change\nbetween linear anmd expo curve"
 				}
 
 			}
@@ -4262,6 +4728,7 @@
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-87",
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 0,
@@ -4304,7 +4771,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-33",
@@ -4841,9 +5307,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 254.0, 1106.0, 102.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 338.0, 706.0, 244.265239775180817, 22.0 ],
+					"patching_rect" : [ 254.0, 1106.0, 102.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4851,37 +5315,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p qwikexperiment"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-76",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2023.0, 380.0, 150.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1118.0, 660.0, 150.0, 47.0 ],
-					"text" : "UI has two level faders:\nactive group fader and master fader"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"linecount" : 16,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1896.0, 395.0, 167.0, 221.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 11,
-					"presentation_rect" : [ 890.326313972473145, 642.0, 227.0, 154.0 ],
-					"text" : "new idea for light level control: fader groups. enter a \"fader group mode\" on the UI and click on lights. The master level of these lgiths will be controlled by a group fader, and when any of those lights are active, all lights in the same group fader will be highlighted on the UI; when the fader is moved, all lights in the active group fader are processed through the qwik patch. (This means the quickControl patch will be deprecated)"
+					"text" : "p qwikexperiment_lightgroups"
 				}
 
 			}
@@ -4895,7 +5329,7 @@
 					"patching_rect" : [ 1666.901965856552124, 441.237088680267334, 151.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1099.753020226955414, 395.119310233782471, 201.860000669956207, 33.0 ],
+					"presentation_rect" : [ 967.880833566188812, 271.584077835083008, 201.860000669956207, 33.0 ],
 					"text" : "re-init patch after changes to cuelist (or maybe populate menu works?)"
 				}
 
@@ -4908,7 +5342,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 999.5, 71.5, 39.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.546763300895691, 572.328451218780856, 39.0, 20.0 ],
+					"presentation_rect" : [ 5.047619163990021, 356.28567099571228, 39.0, 20.0 ],
 					"text" : "store"
 				}
 
@@ -4921,7 +5355,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1058.0, 71.5, 39.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 482.309646606445312, 572.328451218780856, 39.0, 20.0 ],
+					"presentation_rect" : [ 185.999978005886078, 356.28567099571228, 39.0, 20.0 ],
 					"text" : "name"
 				}
 
@@ -4934,7 +5368,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1966.80412220954895, 715.510311126708984, 56.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 40.0, 6.0, 71.0, 20.0 ],
+					"presentation_rect" : [ 25.71428257226944, 6.0, 71.0, 20.0 ],
 					"text" : "minimise"
 				}
 
@@ -5236,7 +5670,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1940.0, 713.448455572128296, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 4.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 6.0, 4.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -5296,8 +5730,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1536.0, 708.0, 100.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 714.0, 675.0, 69.0, 22.0 ],
 					"text" : "metro 1000"
 				}
 
@@ -5311,9 +5743,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1595.0, 868.0, 50.0, 49.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 806.453349947929382, 740.0, 60.0, 35.0 ],
 					"text" : ";\rscene Q5"
 				}
 
@@ -5327,9 +5756,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1538.0, 868.0, 50.0, 49.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 729.265867804845811, 740.0, 60.0, 35.0 ],
 					"text" : ";\rscene Q6"
 				}
 
@@ -5338,7 +5764,7 @@
 				"box" : 				{
 					"id" : "obj-518",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -5351,7 +5777,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 181.0, 326.0, 1142.0, 616.0 ],
+						"rect" : [ 181.0, 326.0, 1408.0, 692.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5380,6 +5806,80 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-45",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 323.0, 82.0, 32.0, 22.0 ],
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 944.0, 68.0, 139.0, 22.0 ],
+									"text" : "route open export import"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 944.0, 39.0, 138.0, 22.0 ],
+									"text" : "r dictionaryofdictionaries"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 944.0, 98.0, 33.0, 22.0 ],
+									"text" : "front"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 944.0, 124.0, 67.0, 22.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-6",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 376.0, 20.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-10",
 									"maxclass" : "comment",
@@ -5419,7 +5919,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5625,7 +6125,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 506.0, 605.565023999999994, 128.0, 22.0 ],
+									"patching_rect" : [ 1023.0, 196.565024109557271, 128.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -5644,7 +6144,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 506.0, 577.0, 75.0, 22.0 ],
+									"patching_rect" : [ 1023.0, 167.565024109557271, 75.0, 22.0 ],
 									"text" : "import, bang"
 								}
 
@@ -5656,7 +6156,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1032.0, 415.0, 29.0, 22.0 ],
+									"patching_rect" : [ 1013.0, 453.0, 29.0, 22.0 ],
 									"text" : "thru"
 								}
 
@@ -5668,7 +6168,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1129.0, 364.5, 54.0, 22.0 ],
+									"patching_rect" : [ 1110.0, 403.0, 54.0, 22.0 ],
 									"text" : "set y do"
 								}
 
@@ -5680,7 +6180,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1067.0, 364.5, 58.0, 22.0 ],
+									"patching_rect" : [ 1048.0, 403.0, 58.0, 22.0 ],
 									"text" : "set y foo"
 								}
 
@@ -5692,7 +6192,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1083.0, 389.5, 100.0, 22.0 ],
+									"patching_rect" : [ 1064.0, 428.0, 100.0, 22.0 ],
 									"text" : "set liszt z y x 74"
 								}
 
@@ -5704,7 +6204,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1096.0, 414.5, 87.0, 22.0 ],
+									"patching_rect" : [ 1077.0, 453.0, 87.0, 22.0 ],
 									"text" : "set numbah 1"
 								}
 
@@ -5716,7 +6216,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 889.0, 288.0, 29.0, 22.0 ],
+									"patching_rect" : [ 870.0, 326.0, 29.0, 22.0 ],
 									"text" : "thru"
 								}
 
@@ -5728,7 +6228,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 986.0, 237.5, 54.0, 22.0 ],
+									"patching_rect" : [ 967.0, 276.0, 54.0, 22.0 ],
 									"text" : "set y do"
 								}
 
@@ -5740,7 +6240,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 924.0, 237.5, 58.0, 22.0 ],
+									"patching_rect" : [ 905.0, 276.0, 58.0, 22.0 ],
 									"text" : "set y foo"
 								}
 
@@ -5752,7 +6252,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 940.0, 262.5, 100.0, 22.0 ],
+									"patching_rect" : [ 921.0, 301.0, 100.0, 22.0 ],
 									"text" : "set liszt z y x 74"
 								}
 
@@ -5764,7 +6264,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 953.0, 287.5, 87.0, 22.0 ],
+									"patching_rect" : [ 934.0, 326.0, 87.0, 22.0 ],
 									"text" : "set numbah 1"
 								}
 
@@ -5776,7 +6276,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 771.0, 401.0, 29.0, 22.0 ],
+									"patching_rect" : [ 752.0, 439.0, 29.0, 22.0 ],
 									"text" : "thru"
 								}
 
@@ -5788,7 +6288,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 868.0, 350.5, 54.0, 22.0 ],
+									"patching_rect" : [ 849.0, 389.0, 54.0, 22.0 ],
 									"text" : "set y do"
 								}
 
@@ -5800,7 +6300,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 806.0, 350.5, 58.0, 22.0 ],
+									"patching_rect" : [ 787.0, 389.0, 58.0, 22.0 ],
 									"text" : "set y foo"
 								}
 
@@ -5812,7 +6312,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 822.0, 375.5, 100.0, 22.0 ],
+									"patching_rect" : [ 803.0, 414.0, 100.0, 22.0 ],
 									"text" : "set liszt z y x 74"
 								}
 
@@ -5824,7 +6324,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 835.0, 400.5, 87.0, 22.0 ],
+									"patching_rect" : [ 816.0, 439.0, 87.0, 22.0 ],
 									"text" : "set numbah 1"
 								}
 
@@ -5836,7 +6336,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 5,
 									"outlettype" : [ "dictionary", "", "", "", "" ],
-									"patching_rect" : [ 953.0, 517.0, 50.5, 22.0 ],
+									"patching_rect" : [ 934.0, 555.0, 50.5, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"legacy" : 1,
@@ -5855,7 +6355,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 5,
 									"outlettype" : [ "dictionary", "", "", "", "" ],
-									"patching_rect" : [ 841.0, 517.0, 50.5, 22.0 ],
+									"patching_rect" : [ 822.0, 555.0, 50.5, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"legacy" : 1,
@@ -5874,7 +6374,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 5,
 									"outlettype" : [ "dictionary", "", "", "", "" ],
-									"patching_rect" : [ 716.0, 479.0, 50.5, 22.0 ],
+									"patching_rect" : [ 697.0, 517.0, 50.5, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"legacy" : 1,
@@ -5889,12 +6389,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-52",
-									"linecount" : 7,
+									"linecount" : 10,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 578.0, 278.0, 150.0, 100.0 ],
-									"text" : "probably easiest to do the importing in javascript! use the list of names all the dicts you want to overwrite to refer to them in the code and then import back."
+									"patching_rect" : [ 578.0, 278.0, 150.0, 141.0 ],
+									"text" : "probably easiest to do the importing in javascript! use the list of names all the dicts you want to overwrite to refer to them in the code and then import back.\n\n(seems like I already sorted it)"
 								}
 
 							}
@@ -5996,7 +6496,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "cuelist", ",", "currentsubsequence", ",", "defaultlight", ",", "init", ",", "lxstate", ",", "lxtest", ",", "p", ",", "r", ",", "s", ",", "scenes", ",", "subsequences", ",", "theme_dict" ],
+									"items" : [ "cuelist", ",", "currentsubsequence", ",", "defaultlight", ",", "init", ",", "lockState", ",", "lxstate", ",", "lxtest", ",", "p", ",", "r", ",", "s", ",", "savedFixtureSetups", ",", "scenes", ",", "subsequences", ",", "theme_dict" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6591,6 +7091,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-157", 0 ],
 									"source" : [ "obj-41", 0 ]
 								}
@@ -6598,8 +7105,54 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
 									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.999996900558472, 1.0, 0.400000929832458, 1.0 ],
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-44", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-44", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.799994170665741, 1.0, 0.40000131726265, 1.0 ],
+									"destination" : [ "obj-45", 0 ],
+									"source" : [ "obj-44", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.799994170665741, 1.0, 0.40000131726265, 1.0 ],
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-45", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.799994170665741, 1.0, 0.40000131726265, 1.0 ],
+									"destination" : [ "obj-483", 0 ],
+									"source" : [ "obj-45", 0 ]
 								}
 
 							}
@@ -6669,9 +7222,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 759.0, 27.0, 141.0, 22.0 ],
+					"patching_rect" : [ 1853.0, 494.5, 141.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 730.0, 27.16049599647522, 141.0, 22.0 ],
+					"presentation_rect" : [ 1124.761767327785492, 214.546509601483649, 141.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6691,7 +7244,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 842.0, 677.0, 179.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 876.288610696792603, 480.418276879976929, 179.0, 20.0 ],
+					"presentation_rect" : [ 750.952278196811676, 432.157980154126335, 179.0, 20.0 ],
 					"text" : "trigger next event with spacebar"
 				}
 
@@ -7506,7 +8059,7 @@
 ,
 					"patching_rect" : [ 1270.103021621704102, 622.0, 178.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1107.343094068210576, 603.568906124696014, 178.0, 32.0 ],
+					"presentation_rect" : [ 1093.333199739456177, 97.403666772256202, 178.0, 32.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7549,7 +8102,7 @@
 					"outlettype" : [ "", "bang", "int" ],
 					"patching_rect" : [ 266.0, 679.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1222.680343866348267, 547.0, 89.0, 22.0 ],
+					"presentation_rect" : [ 1139.642723083496094, 531.0, 89.0, 22.0 ],
 					"text" : "text shownotes"
 				}
 
@@ -7601,8 +8154,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 51.0, 496.0, 159.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 547.0, 159.0, 25.0 ],
-					"text" : "active light: 2"
+					"presentation_rect" : [ 472.380894660949707, 449.142850160598755, 159.0, 25.0 ],
+					"text" : "active light: 10",
+					"textjustification" : 2
 				}
 
 			}
@@ -7693,14 +8247,17 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 16.72515369828265,
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1042.0, 269.0, 41.0, 20.0 ],
+					"patching_rect" : [ 1042.0, 269.0, 57.0, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 428.193662345409393, 654.0, 41.0, 20.0 ],
-					"text" : "scene"
+					"presentation_rect" : [ 134.477926880121231, 254.285683214664459, 104.0, 25.0 ],
+					"text" : "recall scene"
 				}
 
 			}
@@ -7712,7 +8269,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1329.0, 208.0, 71.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 622.68037748336792, 593.800343033359013, 71.0, 20.0 ],
+					"presentation_rect" : [ 157.08410207927227, 454.0, 71.0, 20.0 ],
 					"text" : "default fade"
 				}
 
@@ -7737,8 +8294,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 527.0, 785.0, 19.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 238.0, 61.213196225772208, 19.0, 20.0 ],
-					"text" : "lb"
+					"presentation_rect" : [ 7.523810803890228, 68.213196225772208, 20.952378392219543, 20.0 ],
+					"text" : "lb",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -7752,7 +8310,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 497.0, 780.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 212.0, 57.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 3.714287459850311, 65.35605371774227, 25.71428257226944, 25.71428257226944 ]
 				}
 
 			}
@@ -7789,7 +8347,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 557.0, 681.0, 70.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 42.0, 69.0, 42.0 ],
+					"presentation_rect" : [ 164.76188462972641, 11.714285016059875, 69.0, 42.0 ],
 					"text" : "INIT"
 				}
 
@@ -7805,13 +8363,13 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 497.0, 673.0, 59.0, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 36.0, 55.0, 55.0 ]
+					"presentation_rect" : [ 107.619034469127655, 6.0, 55.0, 55.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 23.815310950438821,
+					"fontsize" : 13.593713838762405,
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -11358,9 +11916,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 497.0, 745.0, 59.47196364402771, 35.0 ],
+					"patching_rect" : [ 497.0, 745.0, 49.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 46.0, 76.0, 35.0 ],
+					"presentation_rect" : [ 6.38095086812973, 37.0, 53.333326816558838, 24.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -11375,14 +11933,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 30.531959004434938,
+					"fontsize" : 26.528441583706783,
 					"id" : "obj-69",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.0, 842.0, 221.0, 41.0 ],
+					"patching_rect" : [ 48.0, 842.0, 193.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1103.290460348129272, 5.828266558583209, 221.0, 41.0 ],
+					"presentation_rect" : [ 1124.761767327785492, 424.157980154126335, 195.238071382045746, 36.0 ],
 					"text" : "subsequences"
 				}
 
@@ -11390,14 +11948,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 30.531959004434938,
+					"fontsize" : 18.856441552628976,
 					"id" : "obj-68",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.0, 704.0, 197.0, 41.0 ],
+					"patching_rect" : [ 48.0, 704.0, 125.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 556.756162345409393, 67.223696744652671, 197.0, 41.0 ],
+					"presentation_rect" : [ 373.333287715911865, 477.928508937358856, 130.0, 28.0 ],
 					"text" : "quickControl"
 				}
 
@@ -11405,29 +11963,30 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 30.531959004434938,
+					"fontsize" : 14.805474732396972,
 					"id" : "obj-66",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1094.0, 380.0, 305.0, 41.0 ],
+					"patching_rect" : [ 1094.0, 380.0, 170.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 890.326313972473145, 555.001772207231852, 305.0, 41.0 ],
-					"text" : "communication"
+					"presentation_rect" : [ 1153.333192408084869, 32.641769923577613, 118.0, 23.0 ],
+					"text" : "communication",
+					"textjustification" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 30.531959004434938,
+					"fontsize" : 24.960949513120976,
 					"id" : "obj-65",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.0, 61.0, 459.0, 41.0 ],
+					"patching_rect" : [ 115.0, 61.0, 424.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 101.0, 459.0, 41.0 ],
+					"presentation_rect" : [ 242.857113182544708, 6.666665852069855, 383.809476912021637, 34.0 ],
 					"text" : "lighting fixtures and scene edit"
 				}
 
@@ -11440,7 +11999,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 214.0, 15.0, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 610.0, 79.0, 20.0 ],
+					"presentation_rect" : [ 161.001071184873581, 139.027720343851001, 79.0, 20.0 ],
 					"text" : "UI poll speed"
 				}
 
@@ -11453,7 +12012,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 77.0, 15.0, 63.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.0, 583.0, 63.0, 20.0 ],
+					"presentation_rect" : [ 132.429646104574203, 112.361056935571582, 63.0, 20.0 ],
 					"text" : "Update UI"
 				}
 
@@ -12425,7 +12984,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-222",
@@ -12601,7 +13159,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-32",
-									"items" : [ "wlan-debug", ",", "SeBoseNew", ",", "Bluetooth-Incoming-Port", ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 518, ",", 313, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1 ],
+									"items" : [ "wlan-debug", ",", "SeBoseNew", ",", "Bluetooth-Incoming-Port", ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1, ",", -1 ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -15294,7 +15852,7 @@
 ,
 					"patching_rect" : [ 924.0, 380.0, 162.148151993751526, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 890.326313972473145, 603.568906124696014, 162.148151993751526, 34.0 ],
+					"presentation_rect" : [ 1109.523673951625824, 61.21319500387699, 162.148151993751526, 34.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -15337,22 +15895,22 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1008.0, 50.0, 75.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.193662345409393, 556.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 10.761904180049896, 314.714248359203339, 75.0, 20.0 ],
 					"text" : "store scene"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 12.0,
 					"id" : "obj-54",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1139.0, 573.0, 159.0, 33.0 ],
+					"patching_rect" : [ 1139.0, 573.0, 237.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1150.268481314182281, 505.81002685804242, 215.0, 20.0 ],
-					"text" : "speedrun: change speed of timed cues"
+					"presentation_rect" : [ 938.095123469829559, 674.634140024750877, 159.0, 20.0 ],
+					"text" : "change speed of timed cues"
 				}
 
 			}
@@ -15365,9 +15923,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1087.0, 573.0, 50.0, 22.0 ],
+					"patching_rect" : [ 1086.666533887386322, 573.333263278007507, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1098.72209244966507, 505.81002685804242, 50.0, 22.0 ]
+					"presentation_rect" : [ 886.66655832529068, 674.634140024750877, 50.0, 22.0 ]
 				}
 
 			}
@@ -15393,7 +15951,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 864.0, 794.0, 33.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 884.536032915115356, 209.27833878993988, 33.0, 20.0 ],
+					"presentation_rect" : [ 677.142774403095245, 460.348451922505546, 33.0, 20.0 ],
 					"text" : "fade"
 				}
 
@@ -15407,7 +15965,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1202.0, 794.0, 57.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1221.649416089057922, 209.27833878993988, 57.0, 20.0 ],
+					"presentation_rect" : [ 676.190393567085266, 646.0627149444515, 57.0, 20.0 ],
 					"text" : "advance"
 				}
 
@@ -15421,7 +15979,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1062.0, 794.0, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1081.443238377571106, 209.27833878993988, 40.0, 20.0 ],
+					"presentation_rect" : [ 874.28560745716095, 460.348451922505546, 40.0, 20.0 ],
 					"text" : "event"
 				}
 
@@ -15435,7 +15993,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 905.0, 794.0, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 924.742216229438782, 209.27833878993988, 40.0, 20.0 ],
+					"presentation_rect" : [ 717.142769515514374, 460.348451922505546, 40.0, 20.0 ],
 					"text" : "name"
 				}
 
@@ -15449,7 +16007,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 835.0, 794.0, 19.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 854.639127373695374, 209.27833878993988, 19.0, 20.0 ],
+					"presentation_rect" : [ 647.618968486785889, 460.348451922505546, 19.0, 20.0 ],
 					"text" : "#"
 				}
 
@@ -15627,13 +16185,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-467",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 864.0, 708.0, 148.0, 20.0 ],
+					"patching_rect" : [ 864.0, 708.0, 148.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 883.505105137825012, 173.195866584777832, 148.0, 20.0 ],
-					"text" : "GO TO cuelist EVENT"
+					"presentation_rect" : [ 912.38084089756012, 650.824619124501396, 175.0, 20.0 ],
+					"text" : "GO TO selected cuelist EVENT"
 				}
 
 			}
@@ -15647,7 +16206,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 836.0, 704.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 856.700982928276062, 169.072155475616455, 24.0, 24.0 ]
+					"presentation_rect" : [ 886.66655832529068, 647.015095780461479, 24.0, 24.0 ]
 				}
 
 			}
@@ -15701,7 +16260,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 836.0, 816.0, 452.67422080039978, 159.636300782025842 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 856.700982928276062, 230.927822113037109, 452.67422080039978, 159.636300782025842 ],
+					"presentation_rect" : [ 650.476110994815826, 481.30083031472509, 452.67422080039978, 159.636300782025842 ],
 					"rows" : 5,
 					"selmode" : 3
 				}
@@ -15710,14 +16269,14 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 66.244707056107345,
+					"fontsize" : 26.698071569360067,
 					"id" : "obj-196",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 831.0, 469.0, 220.282388210296631, 81.0 ],
+					"patching_rect" : [ 828.0, 521.0, 115.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 856.746032720169069, 82.878497451781186, 220.282388210296631, 81.0 ],
+					"presentation_rect" : [ 647.618968486785889, 424.157980154126335, 99.047606945037842, 36.0 ],
 					"text" : "cuelist"
 				}
 
@@ -15997,7 +16556,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1021.0, 600.0, 31.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1049.484477281570435, 420.624465797136963, 31.0, 20.0 ],
+					"presentation_rect" : [ 842.857039868831635, 670.82461668071096, 31.0, 20.0 ],
 					"text" : "now"
 				}
 
@@ -16010,7 +16569,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1020.0, 634.0, 31.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1048.45354950428009, 454.645082447718323, 31.0, 20.0 ],
+					"presentation_rect" : [ 841.904659032821655, 705.110326777070213, 31.0, 20.0 ],
 					"text" : "next"
 				}
 
@@ -16034,7 +16593,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 829.0, 634.0, 191.764599800109863, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 856.700982928276062, 454.645082447718323, 191.764599800109863, 22.0 ]
+					"presentation_rect" : [ 650.476110994815826, 705.110326777070213, 191.764599800109863, 22.0 ]
 				}
 
 			}
@@ -16046,8 +16605,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 854.0, 573.0, 113.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 883.505105137825012, 396.907194256782532, 113.0, 20.0 ],
-					"text" : "advance [spacebar]"
+					"presentation_rect" : [ 736.190386235713959, 646.0627149444515, 113.0, 20.0 ],
+					"text" : "[spacebar]"
 				}
 
 			}
@@ -16061,7 +16620,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 828.0, 571.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 857.731910705566406, 394.845338702201843, 24.0, 24.0 ]
+					"presentation_rect" : [ 651.428491830825806, 645.110334108441521, 24.0, 24.0 ]
 				}
 
 			}
@@ -16077,14 +16636,14 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 830.0, 600.0, 190.764599800109863, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 857.731910705566406, 420.624465797136963, 190.764599800109863, 29.0 ],
+					"presentation_rect" : [ 651.428491830825806, 670.82461668071096, 190.764599800109863, 29.0 ],
 					"textcolor" : [ 0.0, 0.7, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 47.95925260658273,
+					"fontsize" : 10.452267762957311,
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -21159,7 +21718,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 294.97800715764356, 422.62667506422315, 240.166664123535156, 34.0 ],
-									"text" : ";\rscene birdiesFull"
+									"text" : ";\rscene houseLights"
 								}
 
 							}
@@ -23808,9 +24367,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1087.0, 677.0, 184.432103991508484, 62.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1100.783948004245758, 433.645082447718323, 184.432103991508484, 62.0 ],
+					"patching_rect" : [ 1086.666533887386322, 677.142774403095245, 67.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -23864,7 +24421,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 512.0, 566.0, 1660.0, 890.0 ],
+						"rect" : [ 512.0, 156.0, 1660.0, 890.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -27903,7 +28460,7 @@
 ,
 					"patching_rect" : [ 48.0, 895.0, 174.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1141.127570748329163, 54.213196225772208, 174.0, 34.0 ],
+					"presentation_rect" : [ 1125.333192408084869, 460.348451922505546, 174.0, 34.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -28019,8 +28576,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 162.0, 57.0, 22.0 ],
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "message",
@@ -28199,6 +28767,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-199", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-206", 1 ],
 									"source" : [ "obj-203", 0 ]
 								}
@@ -28206,7 +28781,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-199", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-206", 0 ]
 								}
 
@@ -28265,7 +28840,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -28778,7 +29353,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 163.75, 40.00002658762935, 30.0, 30.0 ]
+									"patching_rect" : [ 164.0, 32.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -29044,7 +29619,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1300.0, 277.0, 64.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 593.814399719238281, 617.511681911036931, 64.0, 20.0 ],
+					"presentation_rect" : [ 129.08410207927227, 400.0, 64.0, 20.0 ],
 					"text" : "stop fades"
 				}
 
@@ -29059,7 +29634,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1274.226732730865479, 277.3195720911026, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 567.814399719238281, 615.511681911036931, 24.0, 24.0 ]
+					"presentation_rect" : [ 103.08410207927227, 398.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -29073,7 +29648,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1274.0, 206.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 568.041205286979675, 592.769415256068669, 50.0, 22.0 ]
+					"presentation_rect" : [ 102.08410207927227, 454.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -29139,16 +29714,17 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 16.0,
 					"id" : "obj-211",
-					"items" : [ "blackout", ",", "birdiesFull", ",", "lightubeYellow", ",", "straightDown", ",", "straightDown2", ",", "straightDown3", ",", "straightDown4", ",", "just138", ",", "sidesonly", ",", "BMRendProg", ",", "BMRendProg2", ",", "strobe1", ",", "spotsFullWhite", ",", "spotsFullBlue", ",", "spotsFullPurple", ",", "3107_1", ",", "BMRendProg3", ",", "lowWhiteSpots", ",", "centreSpotHighothersLow", ",", "Q1", ",", "Q2", ",", "Q3", ",", "strobeBurrito", ",", "Q4", ",", "Q5", ",", "Q6", ",", "Q7", ",", "3107dimcentre", ",", "3107dimcentre2", ",", "Q8", ",", "Q9", ",", "Q10", ",", "Q11", ",", "Q12", ",", "nuStrobe", ",", "houseLights", ",", "Julie", ",", "Julie2", ",", "Julie3", ",", "showingGrainne", ",", "fef", ",", "purpleAndBirdies", ",", "purpleOnly", ",", "JoannaMain", ",", "Joanna2", ",", "Nick1", ",", "Nick2", ",", "Nick3", ",", "Nick4", ",", "Tim_Purple", ",", "Tim_ALL", ",", "Tim_ALLminusWash" ],
+					"items" : [ "blackout", ",", "birdiesFull", ",", "lightubeYellow", ",", "straightDown", ",", "straightDown2", ",", "straightDown3", ",", "straightDown4", ",", "just138", ",", "sidesonly", ",", "BMRendProg", ",", "BMRendProg2", ",", "strobe1", ",", "spotsFullWhite", ",", "spotsFullBlue", ",", "spotsFullPurple", ",", "3107_1", ",", "BMRendProg3", ",", "lowWhiteSpots", ",", "centreSpotHighothersLow", ",", "Q1", ",", "Q2", ",", "Q3", ",", "strobeBurrito", ",", "Q4", ",", "Q5", ",", "Q6", ",", "Q7", ",", "3107dimcentre", ",", "3107dimcentre2", ",", "Q8", ",", "Q9", ",", "Q10", ",", "Q11", ",", "Q12", ",", "nuStrobe", ",", "houseLights", ",", "Julie", ",", "Julie2", ",", "Julie3", ",", "showingGrainne", ",", "fef", ",", "purpleAndBirdies", ",", "purpleOnly", ",", "JoannaMain", ",", "Joanna2", ",", "Nick1", ",", "Nick2", ",", "Nick3", ",", "Nick4", ",", "Tim_Purple_only", ",", "Tim_ALL", ",", "Tim_ALLminusWash", ",", "test this" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1042.0, 251.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1042.0, 251.0, 100.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 428.193662345409393, 636.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 57.335079163312912, 278.09520411491394, 177.570092082023621, 26.0 ]
 				}
 
 			}
@@ -29162,14 +29738,13 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1007.0, 92.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 429.732329964637756, 595.008862319168429, 24.0, 24.0 ]
+					"presentation_rect" : [ 10.761904180049896, 337.238054275512695, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-200",
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -29177,9 +29752,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1032.0, 91.0, 100.759715378284454, 25.924643385625927 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 455.505524396896362, 593.977934541878085, 100.759715378284454, 25.924643385625927 ],
-					"text" : "Tim_ALLminusWash"
+					"presentation_rect" : [ 35.523805916309357, 336.285673439502716, 189.379857689142227, 26.168224096298218 ],
+					"text" : "test this"
 				}
 
 			}
@@ -29235,9 +29809,10 @@
 						"Nick2" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 93.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 93.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 						"Nick3" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 249.0, 250.0, 253.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 						"Nick4" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 118.0, 45.0, 180.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 118.0, 45.0, 180.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 118.0, 45.0, 180.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 50.0, 0.0, 38.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-						"Tim_Purple" : [ "only", 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 154.0, 74.0, 209.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+						"Tim_Purple_only" : [ 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 154.0, 74.0, 209.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 						"Tim_ALL" : [ 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 50.0, 0.0, 0.0, 35.0, 0.0, 0.0, 25.0, 0.0, 0.0, 50.0, 10.0, 0.0, 50.0, 17.0, 0.0, 50.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 154.0, 74.0, 209.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-						"Tim_ALLminusWash" : [ 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 50.0, 0.0, 0.0, 35.0, 0.0, 0.0, 25.0, 0.0, 0.0, 50.0, 10.0, 0.0, 50.0, 17.0, 0.0, 50.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 74.0, 209.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+						"Tim_ALLminusWash" : [ 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 174.0, 0.0, 93.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 50.0, 0.0, 0.0, 35.0, 0.0, 0.0, 25.0, 0.0, 0.0, 50.0, 10.0, 0.0, 50.0, 17.0, 0.0, 50.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 74.0, 209.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+						"test this" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 36.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 					}
 ,
 					"id" : "obj-194",
@@ -29276,7 +29851,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1978.350404620170593, 830.671875, 181.0, 290.553687274456024 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 432.601249933242798, 212.747645173262299, 181.0, 290.553687274456024 ],
+					"presentation_rect" : [ 655.238015174865723, 57.142850160598755, 181.0, 290.553687274456024 ],
 					"varname" : "tubectrl",
 					"viewvisibility" : 1
 				}
@@ -29508,7 +30083,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 685.0, 392.0, 156.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 662.5, 415.0, 156.0, 20.0 ],
+					"presentation_rect" : [ 867.618941605091095, 145.714267909526825, 156.0, 20.0 ],
 					"text" : "paste from clipboard to light"
 				}
 
@@ -29523,7 +30098,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 662.0, 392.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 639.5, 415.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 844.761801540851593, 145.714267909526825, 24.0, 24.0 ]
 				}
 
 			}
@@ -29547,8 +30122,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 688.0, 333.0, 165.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 665.5, 388.0, 165.0, 20.0 ],
-					"text" : "copy current light to clipboard"
+					"presentation_rect" : [ 870.476084113121033, 119.047604501247406, 165.0, 20.0 ],
+					"text" : "copy active light to clipboard"
 				}
 
 			}
@@ -29562,7 +30137,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 662.0, 331.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 639.5, 386.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 844.761801540851593, 117.142842829227448, 24.0, 24.0 ]
 				}
 
 			}
@@ -31459,7 +32034,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 449.0, 522.0, 102.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.729807084163667, 307.594922564719127, 102.0, 20.0 ],
+					"presentation_rect" : [ 674.285631895065308, 379.047572731971741, 102.0, 20.0 ],
 					"text" : "starting address"
 				}
 
@@ -31474,7 +32049,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.0, 546.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 645.53077894807052, 331.306261442397044, 50.0, 22.0 ]
+					"presentation_rect" : [ 779.047523856163025, 378.095191895961761, 50.0, 22.0 ]
 				}
 
 			}
@@ -31489,7 +32064,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.0, 488.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.729807084163667, 272.811070135682257, 100.0, 22.0 ]
+					"presentation_rect" : [ 840.952278196811676, 77.142847716808319, 100.0, 22.0 ]
 				}
 
 			}
@@ -31502,7 +32077,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 456.0, 460.0, 89.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.729807084163667, 250.811070135682257, 89.0, 20.0 ],
+					"presentation_rect" : [ 840.952278196811676, 55.238088488578796, 89.0, 20.0 ],
 					"text" : "type of light"
 				}
 
@@ -31515,7 +32090,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 690.0, 150.0, 122.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 674.198557084163667, 222.755455849033297, 122.0, 20.0 ],
+					"presentation_rect" : [ 870.476084113121033, 217.142830610275269, 122.0, 20.0 ],
 					"text" : "remove selected light"
 				}
 
@@ -31706,7 +32281,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 659.0, 145.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.729807084163667, 218.067955849033297, 24.0, 24.0 ]
+					"presentation_rect" : [ 843.809420704841614, 215.23806893825531, 24.0, 24.0 ]
 				}
 
 			}
@@ -31841,7 +32416,7 @@
 ,
 										"2" : 										{
 											"type" : "RGBW",
-											"positionX" : 0.666666666666667,
+											"positionX" : 0.682051282051282,
 											"positionY" : 0.496402877697842,
 											"startingAddress" : 50,
 											"lightGroup" : 1
@@ -31873,7 +32448,7 @@
 ,
 										"6" : 										{
 											"type" : "birdie",
-											"positionX" : -0.097435897435897,
+											"positionX" : -0.087179487179487,
 											"positionY" : 0.592326139088729,
 											"startingAddress" : 134,
 											"lightGroup" : 1
@@ -31897,8 +32472,8 @@
 ,
 										"9" : 										{
 											"type" : "birdie",
-											"positionX" : 0.353846153846154,
-											"positionY" : 0.707434052757794,
+											"positionX" : 0.415384615384615,
+											"positionY" : 0.731414868105515,
 											"startingAddress" : 131,
 											"lightGroup" : 1
 										}
@@ -31969,8 +32544,8 @@
 ,
 										"18" : 										{
 											"type" : "RGBW",
-											"positionX" : -0.697435897435897,
-											"positionY" : 0.477218225419664,
+											"positionX" : -0.692307692307692,
+											"positionY" : 0.434052757793765,
 											"startingAddress" : 60,
 											"lightGroup" : 1
 										}
@@ -32047,7 +32622,7 @@
 ,
 										"2" : 										{
 											"type" : "RGBW",
-											"positionX" : 0.666666666666667,
+											"positionX" : 0.682051282051282,
 											"positionY" : 0.496402877697842,
 											"startingAddress" : 50,
 											"lightGroup" : 1
@@ -32079,7 +32654,7 @@
 ,
 										"6" : 										{
 											"type" : "birdie",
-											"positionX" : -0.097435897435897,
+											"positionX" : -0.087179487179487,
 											"positionY" : 0.592326139088729,
 											"startingAddress" : 134,
 											"lightGroup" : 1
@@ -32103,8 +32678,8 @@
 ,
 										"9" : 										{
 											"type" : "birdie",
-											"positionX" : 0.353846153846154,
-											"positionY" : 0.707434052757794,
+											"positionX" : 0.415384615384615,
+											"positionY" : 0.731414868105515,
 											"startingAddress" : 131,
 											"lightGroup" : 1
 										}
@@ -32175,8 +32750,8 @@
 ,
 										"18" : 										{
 											"type" : "RGBW",
-											"positionX" : -0.697435897435897,
-											"positionY" : 0.477218225419664,
+											"positionX" : -0.692307692307692,
+											"positionY" : 0.434052757793765,
 											"startingAddress" : 60,
 											"lightGroup" : 1
 										}
@@ -32328,7 +32903,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 685.0, 80.0, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 669.859701822917941, 190.821358998447295, 79.0, 20.0 ],
+					"presentation_rect" : [ 870.476084113121033, 187.619024693965912, 79.0, 20.0 ],
 					"text" : "add new light"
 				}
 
@@ -32343,7 +32918,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 659.0, 78.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.859701822917941, 188.821358998447295, 24.0, 24.0 ]
+					"presentation_rect" : [ 843.809420704841614, 185.714263021945953, 24.0, 24.0 ]
 				}
 
 			}
@@ -32355,7 +32930,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 80.0, 758.0, 155.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 603.756162345409393, 122.553128964579855, 155.0, 20.0 ],
+					"presentation_rect" : [ 401.904712796211243, 699.999914467334747, 155.0, 20.0 ],
 					"text" : "Quick Control [static colors]"
 				}
 
@@ -32370,7 +32945,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 54.0, 754.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 556.756162345409393, 111.227760477378524, 42.650736974402662, 42.650736974402662 ]
+					"presentation_rect" : [ 377.142811059951782, 697.14277195930481, 25.773194432258606, 25.773194432258606 ]
 				}
 
 			}
@@ -32477,7 +33052,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 147.5, 761.206936478614807, 50.0, 2395.0 ],
-									"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 253. 0. 0. 0. 0. 0. 0. 0. 0. 0. 253. 0. 0. 0. 0. 0. 0. 0. 0. 0. 253. 0. 0. 0. 0. 0. 0. 0. 0. 0. 253. 0. 0. 0. 0. 0. 0. 0. 0. 0. 253. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 49. 0. 0. 49. 0. 0. 49. 0. 0. 49. 49. 0. 49. 49. 0. 49. 0. 0. 49. 0. 0. 49. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
+									"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 50. 0. 0. 50. 0. 0. 50. 0. 0. 50. 50. 0. 50. 50. 0. 50. 0. 0. 50. 0. 0. 50. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 								}
 
 							}
@@ -35007,7 +35582,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"bgcolor" : [ 0.2, 0.5, 0.2, 1.0 ],
 									"id" : "obj-167",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -36999,7 +37574,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.5, 0.2, 1.0 ],
+									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-81",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -39378,7 +39953,7 @@
 ,
 										"2" : 										{
 											"type" : "RGBW",
-											"positionX" : 0.666666666666667,
+											"positionX" : 0.682051282051282,
 											"positionY" : 0.496402877697842,
 											"startingAddress" : 50,
 											"lightGroup" : 1
@@ -39410,7 +39985,7 @@
 ,
 										"6" : 										{
 											"type" : "birdie",
-											"positionX" : -0.097435897435897,
+											"positionX" : -0.087179487179487,
 											"positionY" : 0.592326139088729,
 											"startingAddress" : 134,
 											"lightGroup" : 1
@@ -39434,8 +40009,8 @@
 ,
 										"9" : 										{
 											"type" : "birdie",
-											"positionX" : 0.353846153846154,
-											"positionY" : 0.707434052757794,
+											"positionX" : 0.415384615384615,
+											"positionY" : 0.731414868105515,
 											"startingAddress" : 131,
 											"lightGroup" : 1
 										}
@@ -39506,8 +40081,8 @@
 ,
 										"18" : 										{
 											"type" : "RGBW",
-											"positionX" : -0.697435897435897,
-											"positionY" : 0.477218225419664,
+											"positionX" : -0.692307692307692,
+											"positionY" : 0.434052757793765,
 											"startingAddress" : 60,
 											"lightGroup" : 1
 										}
@@ -39662,7 +40237,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1754.907216668128967, 820.288661122322083, 196.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 428.193662345409393, 188.410077799843975, 196.0, 20.0 ],
+					"presentation_rect" : [ 650.476110994815826, 32.380948424339294, 196.0, 20.0 ],
 					"text" : "VALUES OF SELECTED FIXTURE"
 				}
 
@@ -39699,7 +40274,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 161.0, 15.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 610.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 106.715363532304764, 139.027720343851001, 50.0, 22.0 ]
 				}
 
 			}
@@ -39713,7 +40288,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 51.0, 13.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 581.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 106.715363532304764, 110.456295263551624, 24.0, 24.0 ]
 				}
 
 			}
@@ -39752,89 +40327,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 51.0, 104.0, 390.0, 417.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 155.0, 390.0, 417.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-83",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 65.0, 571.0, 29.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 753.069404219945909, 536.975966807887517, 29.0, 20.0 ],
-					"text" : "134"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-85",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 552.0, 94.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 729.265867804845811, 517.975966807887517, 94.0, 20.0 ],
-					"text" : "SPEAKER END"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-89",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 587.0, 30.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 729.265867804845811, 552.547417995021306, 30.0, 60.0 ],
-					"text" : "141\n140\n138\n137"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-91",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 65.0, 631.0, 29.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 753.069404219945909, 596.940256234691105, 29.0, 20.0 ],
-					"text" : "143"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-92",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 90.0, 587.0, 30.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 777.569434975942613, 552.547417995021306, 30.0, 60.0 ],
-					"text" : "128\n131\n149\n146"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-93",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 48.0, 652.0, 75.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 735.569404219945909, 617.511681911036931, 75.0, 20.0 ],
-					"text" : "MIXER END"
+					"presentation_rect" : [ 242.857113182544708, 57.142850160598755, 390.0, 417.0 ]
 				}
 
 			}
@@ -39845,7 +40338,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-956",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -39856,7 +40348,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 2196.907093405723572, 842.0, 149.256402254104614, 263.897437274456024 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.601249933242798, 212.747645173262299, 149.256402254104614, 263.897437274456024 ],
+					"presentation_rect" : [ 666.666585206985474, 57.142850160598755, 149.256402254104614, 263.897437274456024 ],
 					"varname" : "birdiectrl",
 					"viewvisibility" : 1
 				}
@@ -39869,6 +40361,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-140",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -39879,7 +40372,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1752.814804255962372, 864.051281362771988, 184.256402254104614, 267.897437274456024 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.101249933242798, 218.957308654243889, 184.256402254104614, 267.897437274456024 ],
+					"presentation_rect" : [ 648.571349322795868, 63.80951601266861, 184.256402254104614, 267.897437274456024 ],
 					"varname" : "rgbwctrl",
 					"viewvisibility" : 1
 				}
@@ -39917,6 +40410,25 @@
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-225",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1181.0, 399.0, 180.071577429771423, 294.040434088770894 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1125.333192408084869, 589.0, 170.0, 82.0 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"border" : 2,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-997",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -39924,7 +40436,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1754.907216668128967, 844.0, 180.071577429771423, 294.040434088770894 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 428.193662345409393, 212.747645173262299, 180.071577429771423, 294.040434088770894 ],
+					"presentation_rect" : [ 650.476110994815826, 57.142850160598755, 185.672897160053253, 349.532707571983337 ],
 					"proportion" : 0.5
 				}
 
@@ -40037,6 +40549,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-132", 0 ],
 					"source" : [ "obj-123", 0 ]
 				}
@@ -40074,6 +40593,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-164", 1 ],
 					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-193", 0 ],
+					"source" : [ "obj-136", 0 ]
 				}
 
 			}
@@ -40289,6 +40815,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-185", 0 ],
+					"source" : [ "obj-182", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-176", 0 ],
 					"source" : [ "obj-187", 0 ]
 				}
@@ -40298,6 +40838,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-184", 0 ],
 					"source" : [ "obj-188", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"source" : [ "obj-190", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-177", 0 ],
+					"source" : [ "obj-193", 0 ]
 				}
 
 			}
@@ -40319,6 +40873,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-195", 0 ],
 					"source" : [ "obj-198", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"source" : [ "obj-199", 0 ]
 				}
 
 			}
@@ -40347,6 +40908,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-197", 0 ],
+					"source" : [ "obj-204", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
 					"source" : [ "obj-205", 0 ]
 				}
@@ -40354,8 +40922,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-209", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-118", 0 ],
 					"source" : [ "obj-211", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-199", 0 ],
+					"source" : [ "obj-212", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"source" : [ "obj-214", 0 ]
 				}
 
 			}
@@ -40648,8 +41237,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-222", 0 ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-93", 0 ]
 				}
 
 			}
@@ -40664,6 +41281,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"source" : [ "obj-97", 0 ]
 				}
 
 			}
@@ -40707,11 +41331,7 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0,
-		"boxgroups" : [ 			{
-				"boxes" : [ "obj-93", "obj-92", "obj-91", "obj-89", "obj-85", "obj-83" ]
-			}
- ]
+		"autosave" : 0
 	}
 
 }

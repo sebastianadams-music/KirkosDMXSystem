@@ -1,3 +1,20 @@
+//// 0.2
+
+26.01.25
+
+Reorganised UI.
+
+Added master import/export (to file) to main interface.
+
+Fixed bug which did not convert scene names to symbol and broke any preset saved that contained a space.
+
+
+Added shortcuts for houselights, blackout and houselights with zero fade (panic!) to main patcher.
+
+Added lock function to stop lights being inadvertently moved
+
+Fixed bug in light interface code which added extra light text to interface.
+
 //// 0.1.5
 
 26.01.25
