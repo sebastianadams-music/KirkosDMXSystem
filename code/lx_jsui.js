@@ -39,14 +39,15 @@ function draw() {
             var positionX = d.get((i + 1) + "::positionX")
             var positionY = d.get((i + 1) + "::positionY")
             var startingAddress = d.get((i + 1) + "::startingAddress")
+            var lightGroup = d.get((i + 1) + "::lightGroup")
             if (type == "RGBW"){
-                drawRGBWPar((i + 1), positionX, positionY, startingAddress)
+                drawRGBWPar((i + 1), positionX, positionY, startingAddress, lightGroup)
             } 
             if (type == "birdie"){
-                drawBirdie((i + 1), positionX, positionY, startingAddress)
+                drawBirdie((i + 1), positionX, positionY, startingAddress, lightGroup)
             }
             if (type == "tube"){
-                drawLightTube((i + 1), positionX, positionY, startingAddress)
+                drawLightTube((i + 1), positionX, positionY, startingAddress, lightGroup)
             }
             lightArray.push([positionX, positionY])
         }
@@ -107,6 +108,7 @@ function ondrag(x,y,but)
     activeLightDict.set("positionX", mouseNorm[0])
     activeLightDict.set("positionY", mouseNorm[1])
     activeLightDict.set("startingAddress", dictContents.get("startingAddress"))
+    activeLightDict.set("lightGroup", dictContents.get("lightGroup"))
 
     d.set(JSON.stringify(activeLight), activeLightDict)
 
@@ -114,7 +116,7 @@ function ondrag(x,y,but)
 
 }
 
-function drawRGBWPar(lxNum, posX, posY, startingAddress){
+function drawRGBWPar(lxNum, posX, posY, startingAddress, lightGroup){
     with (sketch) {
         // grab lx values from dictionary
         var R = lxState.get(startingAddress)/255
@@ -145,12 +147,13 @@ function drawRGBWPar(lxNum, posX, posY, startingAddress){
 		// fontsize(myfontsize*height);
 		// textalign("center","center");		
 		text("add: " + startingAddress);
-        
+        moveto(posX + 1*radius, posY + .25*radius)
+        text("group: " + lightGroup);
 
     }
 }
 
-function drawBirdie(lxNum, posX, posY, startingAddress){
+function drawBirdie(lxNum, posX, posY, startingAddress, lightGroup){
     with (sketch) {
         // grab lx values from dictionary
         var W = lxState.get(startingAddress)/50
@@ -176,13 +179,16 @@ function drawBirdie(lxNum, posX, posY, startingAddress){
 		// fontsize(myfontsize*height);
 		// textalign("center","center");		
 		text("add: " + startingAddress);
+		text("add: " + startingAddress);
+        moveto(posX + 1*radius, posY + .25*radius)
+        text("group: " + lightGroup);
         
 
     }
 }
 
 
-function drawLightTube(lxNum, posX, posY, startingAddress){
+function drawLightTube(lxNum, posX, posY, startingAddress, lightGroup){
     var lTRad = lightTubeLength/96 
     with (sketch) {
         // grab lx values from dictionary
@@ -215,6 +221,9 @@ function drawLightTube(lxNum, posX, posY, startingAddress){
 		// fontsize(myfontsize*height);
 		// textalign("center","center");
 		text("add: " + startingAddress);
+		text("add: " + startingAddress);
+        moveto(posX + 1*radius, posY + .25*radius)
+        text("group: " + lightGroup);
 
         
 
