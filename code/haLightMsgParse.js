@@ -125,16 +125,27 @@ maxApi.addHandler("recall", async () => {
         const url = `http://localhost:3001/api/states/${entity_id}`;
         const response = await axios.get(url);
         const haState = response.data;
-        
-        if (haState && haState.state) {
-          // Update the light object in the dictionary with the new attributes
-          light.brightness = haState.attributes.brightness;
-          light.rgb_color = haState.attributes.rgb_color;
-          light.color_temp_kelvin = haState.attributes.color_temp_kelvin;
-          
+        
+        if (haState && haState.attributes) {
+          // Update the light object in the dictionary with the new attributes, discarding nulls
+          if (haState.attributes.brightness !== null) {
+            light.brightness = haState.attributes.brightness;
+          } else {
+            delete light.brightness;
+          }
 
-          
-          
+          if (haState.attributes.rgb_color !== null) {
+            light.rgb_color = haState.attributes.rgb_color;
+          } else {
+            delete light.rgb_color;
+          }
+          
+          if (haState.attributes.color_temp_kelvin !== null) {
+            light.color_temp_kelvin = haState.attributes.color_temp_kelvin;
+          } else {
+            delete light.color_temp_kelvin;
+          }
+          
           await maxApi.post(`✅ Recalled state for ${entity_id}`);
         } else {
           await maxApi.post(`❌ No state data received for ${entity_id}`);
@@ -144,7 +155,7 @@ maxApi.addHandler("recall", async () => {
         await maxApi.post(`❌ Error recalling state for ${entity_id}: ${errMsg}`);
       }
     }
-    
+    
     // After recalling all states, update the dictionary in Max
     await maxApi.setDict(DICT_ID, dict);
 	await maxApi.setDict(TEMP_DICT_ID, dict);

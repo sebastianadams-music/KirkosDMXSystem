@@ -1,3 +1,6 @@
+/// 0.3.1
+- added home assistant automation listener and feature to cycle through scenes on press of "Button 4"
+
 /// 0.3
 
 13.09.25
