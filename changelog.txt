@@ -1,3 +1,6 @@
+/// 0.3.2
+- fixed init settings to properly initiate the new automation listener.
+
 /// 0.3.1
 - added home assistant automation listener and feature to cycle through scenes on press of "Button 4"
 
