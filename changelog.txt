@@ -1,3 +1,27 @@
+/// 0.3
+
+13.09.25
+- added copy and paste function for smart lights
+- copy and paste now attached to SHIFT + C and SHIFT + V keyboard shortcuts
+- keyboard shortcuts documented in Coll rather than via individual messages (see shortcuts subpatch)
+- added in all smart lights
+- adjusted layout
+- added ability to recall smart lights from HA
+
+31.05.25
+- pasting broken with smart lights
+- noticed strange thing: "p getStartingAddress" has a "s lx.selected.startingAddress" in it but so does the outlet of that object; each is receiving different data, it seems like.
+- need to make a parallel scene system for the smart lights
+- color balance on the smart lights is handled in a totally different way because the mixture of colours with values at 1 seems to be the same as at 255, with brightness totally independent. Calculations are currently wrong for this.
+
+Adding in smart lights 
+
+Note that there is currently no scene interpolation for the smart lights
+And there is also no scripty way of setting the lights (although this would be very easy to implement!)
+
+- priority now is to write good documentation and fix bugs + highlight idiosyncrasies
+
+
 //// 0.2
 
 26.01.25

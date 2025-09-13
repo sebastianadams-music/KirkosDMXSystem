@@ -8,22 +8,26 @@ var height = box.rect[3] - box.rect[1];
 // radius of light circles
 var radius = .1
 var birdieRadius = .075
+var smartRadius = .033
 var lightTubeLength = 1.1
 
-var vbrgb = [.7,.7,.7,.8];
+var vbrgb = [.7,.7,.7,.8]; //bgcolor
 last_x = 0
 last_y = 0
-var d = new Dict("lxtest"); 
-var lxState = new Dict("lxstate");
+var d = new Dict("lxtest"); // dictionary of all lights
+var lxState = new Dict("lxstate"); // dictionary of DMX light state
 var lockState = new Dict("lockState") 
+var smartState = new Dict("lightCmd"); // diction+ary of Smart Light state
+
 var lightArray = []
 var activeLight = 0
 
 // var lxtest = JSON.parse(d.stringify())
 // var keys = Object.entries(lxtest); // could also use dict's getkeys method
 // var vbrgb = [0.,0.,0.,1.];
-
 draw()
+drawSmartLight(1, 1, 1, "antela1", 1)
+
 refresh()
 
 
@@ -49,6 +53,9 @@ function draw() {
             }
             if (type == "tube"){
                 drawLightTube((i + 1), positionX, positionY, startingAddress, lightGroup)
+            }
+            if (type == "smart"){
+                drawSmartLight((i + 1), positionX, positionY, startingAddress, lightGroup) // note that the startingAddress will contain the entity name, not the address
             }
             lightArray.push([positionX, positionY])
         }
@@ -164,6 +171,114 @@ function drawRGBWPar(lxNum, posX, posY, startingAddress, lightGroup){
 
     }
 }
+
+function drawSmartLight(lxNum, posX, posY, entityName, lightGroup) {
+    try {
+        var lights = smartState.get("lights");
+        if (!lights) {
+            post("No lights key found in smartState\n");
+            return;
+        }
+        // post(lights)
+
+        var foundLight = null; 
+        // have to loop through all ligths because of the structure of the data
+
+        for (var i = 0; i < lights.length; i++) {
+            var lightDict = lights[i]; // This is a Max Dict object
+            if (!lightDict || typeof lightDict.get !== "function") {
+                post("Warning: lights[" + i + "] is not a Dict\n");
+                continue;
+            }
+
+            var entity = lightDict.get("entity");
+            // post("Entity", entity, "\n")
+            if (entity === entityName) {
+                foundLight = lightDict;
+                break;
+            }
+            else {
+                                foundLight = lightDict;
+
+            }
+        }
+
+        if (!foundLight) {
+            post("No light found for entity: " + entityName + "\n");
+        //    return;
+        }
+
+        // end of code to find specific light
+        if (foundLight.get("rgb_color")){
+                  // To get rgb_color array from foundLight:
+            var rgb_color = foundLight.get("rgb_color");
+            // post("Found light for entity " + entityName + ", rgb_color: " + JSON.stringify(rgb_color) + "\n");
+            var brightness = parseInt(foundLight.get("brightness"))/255;
+            // draw light
+            var R = parseInt(rgb_color[0])/255*brightness;
+            var G = parseInt(rgb_color[1])/255*brightness;
+            var B = parseInt(rgb_color[2])/255*brightness;
+            // post("RGB: ", R, G, B)
+        }
+        else {
+            // post("no_rgb")
+            var kelvin = foundLight.get("color_temp_kelvin");
+            // post("Found light for entity " + entityName + ", kelvin: " + JSON.stringify(kelvin) + "\n");
+            var brightness = parseInt(foundLight.get("brightness"))/255;
+            // draw light
+            // post("rgb", kelvin)
+            var rgb_color = colorTemperatureToRGB(kelvin)
+            // post("rgb from kevlin", rgb_color, "\n")
+            var R = parseInt(rgb_color[0])/255;
+            var G = parseInt(rgb_color[1])/255;
+            var B = parseInt(rgb_color[2])/255;
+            // post("RGB: ", R, G, B)
+        }
+
+       
+
+        with (sketch) {
+       
+        moveto(posX, posY) 
+        if (activeLight == lxNum){
+            glcolor(0, 0, 0, 1)
+            circle(smartRadius * 1.15, 0, 360)
+            glcolor(1, 1, 1, 1)
+            circle(smartRadius * 1.075, 0, 360)
+
+        } 
+        // opaque background
+        glcolor(0.2, 0.2, 0.2, 1)
+        circle(smartRadius, 0, 360)
+
+        glcolor(R, G, B, brightness)
+        
+      
+        circle(smartRadius, 0, 360)
+        // glcolor(W, W, W, W)
+        // circle(radius/2, 0, 360)
+        glcolor(0, 0, 0, 1)
+        moveto(posX + .85*smartRadius, posY + 1.45*smartRadius)
+        text("ID: " + lxNum);
+        moveto(posX + smartRadius*1.1, posY + smartRadius*.25)
+        glcolor(0, 0, 0, 1)
+        
+        // font(myfont);
+		// fontsize(myfontsize*height);
+		// textalign("center","center");		
+		text("add: " + entityName);
+        moveto(posX + 1.1*smartRadius, posY + -1*smartRadius)
+        text("group: " + lightGroup);
+        }
+
+
+ 
+
+    } catch (err) {
+        post("Error in drawSmartLight: " + err.message + "\n");
+    }
+}
+
 
 function drawBirdie(lxNum, posX, posY, startingAddress, lightGroup){
     with (sketch) {
@@ -308,4 +423,83 @@ function randomLights(){
 }
 
 
+// From http://www.tannerhelland.com/4435/convert-temperature-rgb-algorithm-code/
 
+    // Start with a temperature, in Kelvin, somewhere between 1000 and 40000.  (Other values may work,
+    //  but I can't make any promises about the quality of the algorithm's estimates above 40000 K.)
+
+    
+function colorTemperatureToRGB(kelvin){
+
+    // post("cTemp", kelvin, "cTe,[t")
+
+    var temp = kelvin / 100;
+
+    var red, green, blue;
+
+    if( temp <= 66 ){ 
+
+        red = 255; 
+        
+        green = temp;
+        green = 99.4708025861 * Math.log(green) - 161.1195681661;
+
+        
+        if( temp <= 19){
+
+            blue = 0;
+
+        } else {
+
+            blue = temp-10;
+            blue = 138.5177312231 * Math.log(blue) - 305.0447927307;
+
+        }
+
+    } else {
+
+        red = temp - 60;
+        red = 329.698727446 * Math.pow(red, -0.1332047592);
+        
+        green = temp - 60;
+        green = 288.1221695283 * Math.pow(green, -0.0755148492 );
+
+        blue = 255;
+
+    }
+
+    // post("--", red, green, blue, "---")
+    var rgb = [clamp(red, 0, 255), clamp(green, 0, 255), clamp(blue, 0, 255)]
+
+    return rgb
+
+    // return {
+    //     r : clamp(red,   0, 255),
+    //     g : clamp(green, 0, 255),
+    //     b : clamp(blue,  0, 255)
+    // }
+
+}
+
+
+function clamp( x, min, max ) {
+
+    if(x<min){ return min; }
+    if(x>max){ return max; }
+
+    return x;
+
+}
+
+
+
+function onkeydown(x) {
+    if (x.shiftKey) {
+        if (x.key === "c" || x.key === "C") {
+            outlet(0, "copy");
+        }
+        if (x.key === "v" || x.key === "V") {
+            outlet(0, "paste");
+        }
+    }
+}
