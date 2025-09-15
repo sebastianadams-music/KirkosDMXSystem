@@ -314,7 +314,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.0, 103.0, 158.0, 22.0 ],
+									"text" : "zl.change @zlmaxsize 2048"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-118",
 									"maxclass" : "newobj",
@@ -626,7 +639,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 94.0, 22.0 ],
+									"patching_rect" : [ 50.0, 72.0, 94.0, 22.0 ],
 									"text" : "r dmx_message"
 								}
 
@@ -640,7 +653,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.00001537436674, 40.000015814314906, 30.0, 30.0 ]
+									"patching_rect" : [ 54.0, -14.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -708,6 +721,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-61", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-121", 0 ],
 									"source" : [ "obj-118", 3 ]
 								}
@@ -736,7 +756,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-61", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-119", 0 ]
 								}
 
@@ -750,7 +770,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-61", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-60", 0 ]
 								}
 
@@ -845,7 +865,7 @@
 					"patching_rect" : [ 140.317309617996216, 418.842728614807129, 160.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 245.979591836734699, 160.0, 18.0 ],
-					"text" : "RGBW FIXTURE CH 60 to 63"
+					"text" : "RGBW FIXTURE CH 0 to 3"
 				}
 
 			}
