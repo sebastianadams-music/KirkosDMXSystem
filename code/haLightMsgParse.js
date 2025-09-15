@@ -4,74 +4,94 @@ const maxApi = require('max-api');
 const DICT_ID = "lightCmd"; // name of your dict in Max
 const TEMP_DICT_ID = "singleLightCmd"; // name of your dict in Max
 const previousStates = {};  // Store previous states to avoid duplicates
-
 maxApi.addHandler('bang', async () => {
-  try {
-    const dict = await maxApi.getDict(DICT_ID);
+    // Clear the previous state cache before processing a new command.
+    // This ensures a new preset is always sent, regardless of grouping.
+    Object.keys(previousStates).forEach(key => delete previousStates[key]);
 
-    const command = dict.command;
-    const lights = dict.lights;
+    try {
+        const dict = await maxApi.getDict(DICT_ID);
 
-    if (!command) {
-      await maxApi.post("❗ Dictionary must include 'command'");
-      return;
-    }
-    if (!Array.isArray(lights) || lights.length === 0) {
-      await maxApi.post("❗ Dictionary must include a 'lights' array with at least one light");
-      return;
-    }
+        const command = dict.command;
+        const lights = dict.lights;
 
-    const domain = "light";
+        if (!command) {
+            await maxApi.post("❗ Dictionary must include 'command'");
+            return;
+        }
+        if (!Array.isArray(lights) || lights.length === 0) {
+            await maxApi.post("❗ Dictionary must include a 'lights' array with at least one light");
+            return;
+        }
 
-    for (const light of lights) {
-      if (!light.entity) {
-        await maxApi.post("❗ Each light object must have an 'entity' key");
-        continue;
-      }
+        const domain = "light";
+        const groups = {
+            rgb: { entities: [], data: {} },
+            colorTemp: { entities: [], data: {} },
+            default: { entities: [], data: {} }
+        };
 
-      const entities = Array.isArray(light.entity) ? light.entity : [light.entity];
+        // Step 1: Group lights based on color mode and clean up data
+        for (const light of lights) {
+            if (!light.entity) {
+                await maxApi.post("❗ Each light object must have an 'entity' key");
+                continue;
+            }
 
-      // Remove entity key from data payload
-      const data = {};
+            const entity_ids = Array.isArray(light.entity) ? light.entity.map(id => id.startsWith("light.") ? id : `light.${id}`) : [`light.${light.entity}`];
+            
+            const data = {};
+            let groupKey = "default";
 
-      for (const [key, value] of Object.entries(light)) {
-        if (key !== "entity") {
-          data[key] = value;
-        }
-      }
+            if (light.hasOwnProperty('rgb_color') && light.rgb_color !== null) {
+                groupKey = "rgb";
+                data.rgb_color = light.rgb_color;
+            } else if (light.hasOwnProperty('color_temp_kelvin') && light.color_temp_kelvin !== null) {
+                groupKey = "colorTemp";
+                data.color_temp_kelvin = light.color_temp_kelvin;
+            }
+            
+            if (light.hasOwnProperty('brightness') && light.brightness !== null) {
+                data.brightness = light.brightness;
+            }
 
-      // Normalize all entity IDs to have "light." prefix
-      const entity_ids = entities.map(id => id.startsWith("light.") ? id : `light.${id}`);
-      data.entity_id = entity_ids;
+            groups[groupKey].entities.push(...entity_ids);
+            groups[groupKey].data = { ...groups[groupKey].data, ...data };
+        }
+        
+        const url = `http://localhost:3001/api/${domain}/${command}`;
 
-      // Check if any of these lights have a state change
-      const combinedKey = entity_ids.join(",");
-      const prevState = previousStates[combinedKey];
-      const hasChanged = !prevState || Object.keys(data).some(key => {
-        return JSON.stringify(prevState[key]) !== JSON.stringify(data[key]);
-      });
+        // Step 2: Send a single request for each group
+        for (const [groupKey, group] of Object.entries(groups)) {
+            if (group.entities.length === 0) continue;
 
-      if (!hasChanged) {
-        await maxApi.post(`⏩ Skipped ${combinedKey} (no change)`);
-        continue;
-      }
+            const payload = {
+                entity_id: group.entities,
+                ...group.data
+            };
 
-      // Send one request for the group
-      const url = `http://localhost:3001/api/${domain}/${command}`;
-
-      try {
-        const response = await axios.post(url, data);
-        await maxApi.post(`✅ Sent to [${entity_ids.join(", ")}] — Status: ${response.status}`);
-        previousStates[combinedKey] = { ...data }; // Save state
-      } catch (err) {
-        const errMsg = err.response?.data?.message || err.message || "Unknown error";
-        await maxApi.post(`❌ Error sending to [${entity_ids.join(", ")}]: ${errMsg}`);
-      }
-    }
-  } catch (error) {
-    const errMsg = error.message || "Unknown error";
-    await maxApi.post(`❌ Error: ${errMsg}`);
-  }
+            // The `hasChanged` check is now simpler because the cache is cleared.
+            const combinedKey = `${groupKey}-${JSON.stringify(payload)}`;
+            const hasChanged = !previousStates[combinedKey];
+            
+            if (!hasChanged) {
+                await maxApi.post(`⏩ Skipped group [${group.entities.join(", ")}] (no change)`);
+                continue;
+            }
+            
+            try {
+                const response = await axios.post(url, payload);
+                await maxApi.post(`✅ Sent group [${group.entities.join(", ")}] — Status: ${response.status}`);
+                previousStates[combinedKey] = true; // Mark this specific state as sent
+            } catch (err) {
+                const errMsg = err.response?.data?.message || err.message || "Unknown error";
+                await maxApi.post(`❌ Error sending group [${group.entities.join(", ")}]: ${errMsg}`);
+            }
+        }
+    } catch (error) {
+        const errMsg = error.message || "Unknown error";
+        await maxApi.post(`❌ Error: ${errMsg}`);
+    }
 });
 
 // Find the index of an entity in the lights array

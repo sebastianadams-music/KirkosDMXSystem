@@ -1,5 +1,9 @@
-15.09.25
+///0.3.3
 
+15.09.25
+- Home Assistant server now sends lights in grouped payloads to HA for quicker updates
+- "previous state" cache over-ridden so that lights are not skipped / break down when presets have mixed settings (may add this back in at some point)
+- fixed HA Automation listener 
 - zl.change added in birdies
 - bang added rather than metro for overall triggering (via "; ui bang" message)
 - zl.change added after speedlim in DMX message
@@ -64,7 +68,7 @@ Got fader groups functioning by adding a freeze button first.
 Added a master level scaler which simply scales the total output of light (operates after scenes etc. are already applied).
 
 Added fade curve using function (rather than curve~ so that it still works when audio is switched off in Max)
- Menu for saving and restoring setups added.
+Menu for saving and restoring setups added.
 
 Minimise/restore button added for ease of use in Unit 44
 

@@ -24,35 +24,36 @@ function connectWebSocket() {
         ws.send(JSON.stringify(authMessage));
     };
 
-    ws.onmessage = (event) => {
-        const message = JSON.parse(event.data);
-        maxApi.post(`Received message: ${JSON.stringify(message)}`);
+ws.onmessage = (event) => {
+    const message = JSON.parse(event.data);
+    maxApi.post(`🔄 Received message: ${JSON.stringify(message, null, 2)}`);
 
-        if (message.type === "auth_ok") {
-            maxApi.post("✅ Authentication successful.");
-            // Subscribe to state changes for the automation entity
-            const subscribeMessage = {
-                "id": messageId++,
-                "type": "subscribe_events",
-                "event_type": "state_changed"
-            };
-            ws.send(JSON.stringify(subscribeMessage));
-        }
+    // Handle the authentication response
+    if (message.type === "auth_ok") {
+        maxApi.post("✅ Authentication successful. Subscribing to automation triggers...");
 
-        // Check if the message is a state change event
-        if (message.type === "event" && message.event.event_type === "state_changed") {
-            const newState = message.event.data.new_state;
-            if (newState && newState.entity_id === AUTOMATION_ENTITY_ID) {
-                // Check if the state has changed (i.e. if the button was pressed)
-                // Home Assistant automation buttons change state from `off` to a timestamp
-                if (newState.state !== "off") {
-                    maxApi.outlet("automation_pressed", "bang");
-                    maxApi.post(`✅ Automation "${AUTOMATION_ENTITY_ID}" was triggered!`);
-                }
+        const subscribeMessage = {
+            "id": messageId++,
+            "type": "subscribe_trigger",
+            "trigger": {
+                "platform": "state",
+                "entity_id": AUTOMATION_ENTITY_ID
             }
-        }
-    };
+        };
+        ws.send(JSON.stringify(subscribeMessage));
+    }
 
+    // This block now specifically handles 'trigger' events
+    if (
+  message.type === "event" &&
+  message.event.variables &&
+  message.event.variables.trigger
+) {
+  maxApi.outlet("automation_pressed", "bang");
+  maxApi.post(`✅ Automation "${AUTOMATION_ENTITY_ID}" was triggered!`);
+}
+
+};
     ws.onclose = () => {
         maxApi.post("❌ WebSocket connection closed. Attempting to reconnect...");
         setTimeout(connectWebSocket, 5000); // Attempt to reconnect after 5 seconds
