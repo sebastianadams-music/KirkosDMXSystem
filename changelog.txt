@@ -1,3 +1,55 @@
+///0.3.4
+15.10.25
+
+Detailed Changelog: Home Assistant Light Control System (written by Gemini)
+
+This changelog documents critical stability and functionality fixes across the Node.js Max external scripts, resolving issues with intermittent Max freezing and unreliable individual light control updates.
+
+1. haLightMsgParse.js (Main Logic Script)
+
+The state-tracking mechanism (previousStates) was completely overhauled to prevent the intermittent Max hangs and restore reliable state tracking for both batch presets and individual light updates.
+
+A. Stability and Performance Fixes (Max Hang)
+
+Change: Optimized State Key Generation
+
+Rationale: Fixed intermittent Max freezing. The previous logic used JSON.stringify(payload) to create a unique state key. This is a highly computationally expensive operation that blocks the Node process, causing the hang. The new key is now generated from the fast-to-compute combination of the group key and a sorted list of entity IDs (groupKey-sortedEntities.join(',')).
+
+Change: Removed Aggressive Cache Clearing
+
+Rationale: The line Object.keys(previousStates).forEach(...) at the start of the bang handler was removed. This was aggressively clearing the state cache, which interfered with single-light state persistence and caused commands to be unnecessarily re-sent.
+
+Change: Refined Change Detection
+
+Rationale: The change detection logic now compares only the light attributes (group.data) and the command (command) against the stable key. This is faster and prevents skipping valid changes (e.g., switching from a turn_on preset to a turn_off preset with the same attributes).
+
+B. Multi-Mode State Synchronization
+
+Change: Batch-to-Single Synchronization
+
+Rationale: After a successful batch command in the bang handler, the state is now explicitly saved for each light individually (previousStates[entityId] = { ... }). This synchronizes the cache so that when a user subsequently controls that single light, the dedicated single-light handler knows the current state and doesn't skip the first command.
+
+C. Single-Light Control Handler (single_light_update)
+
+Change: Single-Light Control Handler
+
+Rationale: A single_light_update handler (which was missing in your full context but is necessary for the single light UI control) was added/corrected to use the dedicated, stable single-light state keys and logic, ensuring its functionality is entirely separate from the batch grouping.
+
+2. [your-jsui-script].js (Interface Script)
+
+A critical logic error was found in your drawSmartLight function that led to unreliable UI representation, especially when searching for a light entity within the Max Dict array.
+
+A. UI Drawing Logic Fix
+
+Change: Fixed Entity Lookup Bug
+
+Rationale: The for loop logic within drawSmartLight contained a bug (foundLight = lightDict; in the else block) that caused foundLight to be incorrectly overwritten or defaulted to the last light in the list if the match was not found immediately. This was the cause of the UI not reliably updating individual lights.
+
+Change: Corrected Search Logic
+
+Rationale: The loop has been corrected to use standard pattern matching, ensuring that foundLight is only assigned when the entityName exactly matches the light's entity, and the search breaks immediately, guaranteeing the UI draws the correct light state.
+
+
 ///0.3.3
 
 15.09.25

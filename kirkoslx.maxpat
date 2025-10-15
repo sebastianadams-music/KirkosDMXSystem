@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 74.0, 1430.0, 826.0 ],
+		"rect" : [ 100.0, 100.0, 1430.0, 800.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -3691,8 +3691,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -4363,6 +4361,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -4440,6 +4440,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -13178,7 +13180,7 @@
 					"patching_rect" : [ 51.0, 496.0, 159.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 472.380894660949707, 449.142850160598755, 159.0, 25.0 ],
-					"text" : "active light: 2",
+					"text" : "no light is selected",
 					"textjustification" : 2
 				}
 
@@ -18210,7 +18212,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-32",
-									"items" : [ "wlan-debug", ",", "SeBoseNew", ",", "Bluetooth-Incoming-Port", ",", 518, ",", 518, ",", 518, ",", 518 ],
+									"items" : [ "wlan-debug", ",", "SeBoseNew", ",", "Bluetooth-Incoming-Port" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -40925,7 +40927,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-132",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -41174,7 +41175,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-137",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -41423,7 +41423,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-147",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -41672,7 +41671,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-155",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -41921,7 +41919,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-159",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -42170,7 +42167,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-163",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -42419,7 +42415,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-167",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -42668,7 +42663,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-171",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -42917,7 +42911,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-99",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -43166,7 +43159,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-107",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -43415,7 +43407,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-116",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -43664,7 +43655,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-121",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -43913,7 +43903,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-95",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -44162,7 +44151,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-85",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -44683,7 +44671,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"id" : "obj-6",
 									"maxclass" : "number",
 									"numinlets" : 1,

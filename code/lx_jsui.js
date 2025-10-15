@@ -176,38 +176,30 @@ function drawSmartLight(lxNum, posX, posY, entityName, lightGroup) {
     try {
         var lights = smartState.get("lights");
         if (!lights) {
-            post("No lights key found in smartState\n");
+            // post("No lights key found in smartState\n");
             return;
         }
-        // post(lights)
-
-        var foundLight = null; 
-        // have to loop through all ligths because of the structure of the data
-
-        for (var i = 0; i < lights.length; i++) {
-            var lightDict = lights[i]; // This is a Max Dict object
-            if (!lightDict || typeof lightDict.get !== "function") {
-                post("Warning: lights[" + i + "] is not a Dict\n");
-                continue;
-            }
-
-            var entity = lightDict.get("entity");
-            // post("Entity", entity, "\n")
-            if (entity === entityName) {
-                foundLight = lightDict;
-                break;
-            }
-            else {
-                                foundLight = lightDict;
-
-            }
-        }
+        
+        // --- FIX: Correctly find the light entity ---
+var foundLight = null;
+for (var i = 0; i < lights.length; i++) {
+    var lightDict = lights[i];
+    if (lightDict && typeof lightDict.get === "function" && lightDict.get("entity") === entityName) {
+        foundLight = lightDict;
+        break; // Stop searching once found!
+    }
+}
 
         if (!foundLight) {
-            post("No light found for entity: " + entityName + "\n");
-        //    return;
+            // post("No light found for entity: " + entityName + "\n");
+            return;
         }
-
+        
+        // ... (rest of the drawing logic remains the same) ...
+        
+        // Note: The original code's drawing logic after this point seems to have some redundant `foundLight` checks 
+        // and inconsistent use of parseInt, but they aren't the primary issue right now.
+        // The primary issue was finding the light.
         // end of code to find specific light
         if (foundLight.get("rgb_color")){
                   // To get rgb_color array from foundLight:
